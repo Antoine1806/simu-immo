@@ -68,9 +68,9 @@ def render_scenario_builder(scenario_label: str, key_prefix: str, def_loans: int
 # Default Presets:
 # Scenario A: Buy a home to live in (1 Loan)
 # Scenario B: Buy a flat to rent out + Rent home to live in + Stocks (1 Loan, 1 Live Rent, 1 Rent Out, 1 Stock)
-s1_params = render_scenario_builder("Scenario A (Buy Primary Residence)", "s1", def_loans=1, def_res_rents=0, def_inv_rents=0, def_stocks=0)
+s1_params = render_scenario_builder("Scenario A (e.g. Buy Primary Residence)", "s1", def_loans=1, def_res_rents=0, def_inv_rents=0, def_stocks=0)
 st.sidebar.divider()
-s2_params = render_scenario_builder("Scenario B (Buy-to-Let + Rent Home + Stocks)", "s2", def_loans=1, def_res_rents=1, def_inv_rents=1, def_stocks=1)
+s2_params = render_scenario_builder("Scenario B (e.g. Buy-to-Let + Rent Home + Stocks)", "s2", def_loans=1, def_res_rents=1, def_inv_rents=1, def_stocks=1)
 
 # --- SIMULATION ENGINE ---
 def calculate_simulation(params, total_years, prop_apprec_rate):
